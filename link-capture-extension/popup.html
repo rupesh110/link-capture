@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Capture</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Link Capture</h1>
+      <p class="subtitle">Collect all unique links from the current tab.</p>
+
+      <div class="controls">
+        <button id="captureButton" type="button">Capture Links</button>
+        <button id="copyButton" type="button" disabled>Copy</button>
+        <button id="downloadButton" type="button" disabled>Download</button>
+      </div>
+
+      <p id="status" class="status">Ready.</p>
+      <p id="summary" class="summary">No links captured yet.</p>
+
+      <label class="output-label" for="output">Captured links</label>
+      <textarea id="output" readonly placeholder="Captured links will appear here..."></textarea>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

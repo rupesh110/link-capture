@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Link Capture",
+  "version": "1.0.0",
+  "description": "Capture all links from the current page.",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "action": {
+    "default_title": "Link Capture",
+    "default_popup": "popup.html"
+  }
+}
